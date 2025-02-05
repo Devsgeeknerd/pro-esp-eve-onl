@@ -5,4 +5,8 @@ import express from "express";
 import cors from "cors";
 
 // Importa o PrismaClient para interagir com o banco de dados através do Prisma ORM.
-import {PrismaClient} from "@prisma/client";
+import { PrismaClient } from "@prisma/client";
+
+// Funções utilitárias para converter horários.
+import { convertHourStringToMinutes } from "./utils/convert-hour-string-to-minutes";
+import { convertMinutesToHourString } from "./utils/convert-minutes-to-hour-string";
