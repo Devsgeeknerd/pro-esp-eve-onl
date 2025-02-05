@@ -13,3 +13,6 @@ import { convertMinutesToHourString } from "./utils/convert-minutes-to-hour-stri
 
 // Cria uma instância do express para configurar o servidor.
 const app = express();
+
+// Usamos o middleware do express para interpretar JSON no corpo das requisições.
+app.use(express.json());
