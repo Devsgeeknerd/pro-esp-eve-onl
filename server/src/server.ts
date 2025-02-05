@@ -10,3 +10,6 @@ import { PrismaClient } from "@prisma/client";
 // Funções utilitárias para converter horários.
 import { convertHourStringToMinutes } from "./utils/convert-hour-string-to-minutes";
 import { convertMinutesToHourString } from "./utils/convert-minutes-to-hour-string";
+
+// Cria uma instância do express para configurar o servidor.
+const app = express();
