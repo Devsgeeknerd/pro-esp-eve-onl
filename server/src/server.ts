@@ -19,3 +19,9 @@ app.use(express.json());
 
 // Ativa o CORS para permitir requisições de diferentes origens.
 app.use(cors());
+
+// Cria uma instância do PrismaClient, que vai nos permitir fazer consultas ao banco de dados.
+const prisma = new PrismaClient({
+  // Faz log de todas as queries que forem executadas.
+  log: ["query"],
+});
