@@ -16,3 +16,6 @@ const app = express();
 
 // Usamos o middleware do express para interpretar JSON no corpo das requisições.
 app.use(express.json());
+
+// Ativa o CORS para permitir requisições de diferentes origens.
+app.use(cors());
