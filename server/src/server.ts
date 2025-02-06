@@ -43,3 +43,37 @@ app.get("/games", async (request, response) => {
   // Retorna a lista de jogos em formato JSON.
   return response.json(games);
 });
+
+// Rota POST para criar um novo anúncio associado a um jogo.
+app.post("/games/:id/ads", async (request, response) => {
+  // Pega o ID do jogo a partir da  URL.
+  const gameId = request.params.id;
+
+  // Extrai os dados enviados no corpo da requisição;
+  const body: any = request.body;
+
+  // Cria um novo anúncio no banco de dados associado ao jogo especificado.
+  const ad = await prisma.ad.create({
+    data: {
+      // Associa o anúncio ao jogo pelo ID.
+      gameId,
+      // Nome do jogador.
+      name: body.name,
+      // Anos jogando.
+      yearsPlaying: body.yearsPlaying,
+      // Discord do jogador.
+      discord: body.discord,
+      // Dias da semana como string separada por virgula.
+      weekDays: body.weekDays.join(","),
+      // Converte a hora de inicio para minutos.
+      hourStart: convertHourStringToMinutes(body.hourStart),
+      // Converte a hora de fim para minutos.
+      hourEnd: convertHourStringToMinutes(body.hourEnd),
+      // Se o jogador vai usar canal de voz.
+      useVoiceChannel: body.useVoiceChannel,
+    },
+  });
+
+  // Retorna a resposta com o anúncio criado, com status 201 (criado).
+  return response.status(201).json(ad);
+});
