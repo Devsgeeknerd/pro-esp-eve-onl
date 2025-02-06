@@ -25,3 +25,21 @@ const prisma = new PrismaClient({
   // Faz log de todas as queries que forem executadas.
   log: ["query"],
 });
+
+// Rota GET para listar todos os jogos no banco de dados.
+app.get("/games", async (request, response) => {
+  // Envia uma consulta ao prisma para buscar todos os jogos e contar quantos anúncios tem.
+  const games = await prisma.game.findMany({
+    include: {
+      _count: {
+        select: {
+          // Conta o número de anúncios para cada jogo.
+          ads: true,
+        },
+      },
+    },
+  });
+
+  // Retorna a lista de jogos em formato JSON.
+  return response.json(games);
+});
