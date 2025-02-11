@@ -40,6 +40,24 @@
 >      return response.status(500).json({ message: "Erro interno do servidor" });
 >    }
 >   ```
+>
+> * **Não usar `any` no TypeScript**:
+>   * O uso de `any` nos tipos de dados de entrada (`body: any`) compromete a segurança da tipagem estática do TypeScript.
+>   * Em vez de usar `any`, crie um tipo ou interface específica para o corpo da requisição.
+>   * Exemplo:
+>
+>   ```typescript
+>
+>    interface AdRequest {
+>      name: string;
+>      yearsPlaying: number;
+>      discord: string;
+>      weekDays: string[];
+>      hourStart: string;
+>      hourEnd: string;
+>      useVoiceChannel: boolean;
+>    }
+>    ```
 
 > [!NOTE]\
 > **Observações**:
