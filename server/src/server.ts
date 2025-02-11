@@ -127,3 +127,29 @@ app.get("/games/:id/ads", async (request, response) => {
     })
   );
 });
+
+// Rota GET para obter o Discord de um anúncio específico.
+app.get("/ads/:id/discord", async (request, response) => {
+  // Pega o ID do anúncio a partir da URL.
+  const adId = request.params.id;
+
+  // Busca o anúncio no banco de dados.
+  const id = await prisma.ad.findUniqueOrThrow({
+    select: {
+      // Só busca o campo discord.
+      discord: true,
+    },
+    where: {
+      // Filtra o anúncio pelo ID.
+      id: adId,
+    },
+  });
+
+  // Retorna o Discord do anúncio.
+  return response.json({
+    discord: ad.discord,
+  });
+});
+
+// Inicia o servidor na porta 3333.
+app.listen(3333);
