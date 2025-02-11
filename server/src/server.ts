@@ -110,4 +110,20 @@ app.get("/games/:id/ads", async (request, response) => {
       createdAt: "desc",
     },
   });
+
+  // Formata os anúncios retornados para um formato mais legível (transforma string de dias e horas).
+  return response.json(
+    ads.map((ad) => {
+      return {
+        // Mantém todas as propriedades do anúncio.
+        ...ad,
+        // Converte a string de dias de volta para um array.
+        weekDays: ad.weekDays.split(","),
+        // Converte os minutos de volta para o formato de hora.
+        hourStart: convertMinutesToHourString(ad.hourStart),
+        // Converte os minutos de volta para o formato de hora.
+        hourEnd: convertMinutesToHourString(ad.hourEnd),
+      };
+    })
+  );
 });
