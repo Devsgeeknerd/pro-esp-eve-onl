@@ -6,6 +6,11 @@
 > [!IMPORTANT]\
 > **Boas práticas**:
 >
+> * **Validação e Tipagem de Dados**:
+>
+>   * **Descrição:**
+>     * É importante garantir que os dados recebidos pelo servidor estejam em um formato esperado e validado.
+>     * No código, o uso de `express.json()` já é uma boa prática para parsear as requisições JSON.
 
 > [!WARNING]\
 > **Sugestões de melhoria**:
