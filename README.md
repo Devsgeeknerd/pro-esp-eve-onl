@@ -72,6 +72,9 @@
 >
 > * **Uso de `prisma.game.findMany` com `include`**:
 >   * O uso de `include` com a contagem de anúncios é uma boa estratégia para evitar múltiplas consultas ao banco de dados, mas é importante ficar atento ao desempenho se o número de jogos ou anúncios crescer muito.
+>
+> * **O uso de `split` e `join` para manipulação de dias da semana**:
+>   * A conversão dos dias da semana para string e vice-versa (com `join` e `split`) pode ser uma estratégia simples, mas deve ser documentada corretamente para que não haja confusão sobre o formato esperado.
 
 <!-- Informações -->
 ## &#8505; Informações
