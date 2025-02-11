@@ -77,3 +77,6 @@ app.post("/games/:id/ads", async (request, response) => {
   // Retorna a resposta com o anúncio criado, com status 201 (criado).
   return response.status(201).json(ad);
 });
+
+// Rota GET para listar todos os anúncios de um jogo específico.
+app.get("/games/:id/ads", async (request, response) => {});
