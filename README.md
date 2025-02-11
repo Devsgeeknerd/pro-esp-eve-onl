@@ -19,6 +19,9 @@
 > * **Organização do Código**:
 >   * O código está organizado de forma simples, com cada rota responsável por uma tarefa específica.
 >   * Se o projeto crescer, separe o código em módulos, por exemplo, criando pastas para `controllers`, `services`, e `routes`.
+>
+> * **Nomes de Variáveis Claras e Descritivos**:
+>   * 
 
 > [!WARNING]\
 > **Sugestões de melhoria**:
@@ -41,7 +44,7 @@
 >    }
 >   ```
 >
-> * **Não usar `any` no TypeScript**:
+> * **Não Usar `any` no TypeScript**:
 >   * O uso de `any` nos tipos de dados de entrada (`body: any`) compromete a segurança da tipagem estática do TypeScript.
 >   * Em vez de usar `any`, crie um tipo ou interface específica para o corpo da requisição.
 >   * Exemplo:
@@ -59,21 +62,21 @@
 >    }
 >    ```
 >
-> * **Não tratar casos de dados não encontrados**:
+> * **Não Tratar Casos de Dados Não Encontrados**:
 >   * A função `findUniqueOrThrow` lançaria um erro se o anúncio não for encontrado, mas isso não é tratado no código.
 >   * Use um bloco `try/catch` para capturar exceções e retornar uma mensagem mais amigável caso o anúncio não seja encontrado.
 
 > [!NOTE]\
 > **Observações**:
 >
-> * **O uso de `convertHourStringToMinutes` e `convertMinutesToHourString`**:
+> * **O Uso de `convertHourStringToMinutes` e `convertMinutesToHourString`**:
 >   * Essas funções são importantes para garantir que os horários sejam armazenados de forma consistente no banco de dados (como minutos).
 >   * No entanto, é crucial garantir que o formato de entrada seja validado corretamente antes de passá-lo para essas funções.
 >
 > * **Uso de `prisma.game.findMany` com `include`**:
 >   * O uso de `include` com a contagem de anúncios é uma boa estratégia para evitar múltiplas consultas ao banco de dados, mas é importante ficar atento ao desempenho se o número de jogos ou anúncios crescer muito.
 >
-> * **O uso de `split` e `join` para manipulação de dias da semana**:
+> * **O Uso de `split` e `join` Para Manipulação de Dias da Semana**:
 >   * A conversão dos dias da semana para string e vice-versa (com `join` e `split`) pode ser uma estratégia simples, mas deve ser documentada corretamente para que não haja confusão sobre o formato esperado.
 
 <!-- Informações -->
