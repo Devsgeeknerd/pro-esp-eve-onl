@@ -7,10 +7,14 @@
 > **Boas práticas**:
 >
 > * **Validação e Tipagem de Dados**:
->
 >   * É importante garantir que os dados recebidos pelo servidor estejam em um formato esperado e validado.
 >   * No código, o uso de `express.json()` já é uma boa prática para parsear as requisições JSON.
 >   * Defina tipos mais específicos no TypeScript para cada corpo de requisição, evitando o uso de `any`.
+>
+> * **Uso de Middleware**:
+>   * O uso de `express.json()` e `cors()` como middleware é uma boa prática.
+>   * Isso permite que o servidor entenda e aceite requisições JSON e também que aplicações de diferentes origens possam se comunicar com a API.
+>   * Em sistema de produção, é bom adicionar um middleware para verificar autenticações e autorizações.
 
 > [!WARNING]\
 > **Sugestões de melhoria**:
