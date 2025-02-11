@@ -21,7 +21,7 @@
 >   * Se o projeto crescer, separe o código em módulos, por exemplo, criando pastas para `controllers`, `services`, e `routes`.
 >
 > * **Nomes de Variáveis Claras e Descritivos**:
->   * 
+>   * No caso, `hour` e `minutes` são nomes claros, mas poderíamos também usar `hours` e `minutes` no plural para uma consistência maior com a terminologia.
 
 > [!WARNING]\
 > **Sugestões de melhoria**:
