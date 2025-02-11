@@ -22,9 +22,18 @@
 >
 > * **Nomes de Variáveis Claras e Descritivos**:
 >   * No caso, `hour` e `minutes` são nomes claros, mas poderíamos também usar `hours` e `minutes` no plural para uma consistência maior com a terminologia.
+>
+> * **Uso do `map(Number)`**:
+>   * Embora `map(Number)` seja eficiente, pode ser um pouco confuso para que está começando.
+>   * Uma alternativa mais explicita seria fazer o `parseInt` ou `parseFloat` diretamente.
+>   * Exemplo:
+>
+>   ```typescript
+>    const [hour, minutes] = hourString.split(":").map(part => parseInt(part, 10)); 
+>   ```
 
 > [!WARNING]\
-> **Sugestões de melhoria**:
+> **Recomendações**:
 >
 > * **Validação de Dados de Entrada**:
 >   * O código atual não valida se os dados que o usuário envia são realmente os esperados.
