@@ -83,6 +83,9 @@
 >    const totalMinutesFromHours = hour * 60;
 >    const minutesAmount = totalMinutesFromHours + minutes;
 >   ```
+>
+> * **Tratar Valores Negativos ou Inválidos**:
+>   * Verificar se `hour` ou `minutes` são valores negativos ou estão fora dos intervalos válidos (por exemplo, `hours` deve ser entre 0 e 23, e `minutes` deve ser entre 0 e 59).
 
 > [!NOTE]\
 > **Observações**:
