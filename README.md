@@ -32,6 +32,7 @@
 > * **Tratamento de Erros**:
 >   * Não há tratamento adequado para erros que possam ocorrer durante a execução das queries ou quando o banco de dados não retorna os resultados esperados.
 >   * Adicione blocos `try/catch` nas funções assíncronas para capturar possíveis erros e retornar mensagens mais amigáveis para o usuário.
+>
 >   ```typescript
 >    try {
 >    // Código que pode gerar erro.
@@ -39,7 +40,6 @@
 >      return response.status(500).json({ message: "Erro interno do servidor" });
 >    }
 >   ```
-
 
 > [!NOTE]\
 > **Observações**:
