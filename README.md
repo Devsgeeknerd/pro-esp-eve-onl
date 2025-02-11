@@ -21,7 +21,7 @@
 >   * Se o projeto crescer, separe o código em módulos, por exemplo, criando pastas para `controllers`, `services`, e `routes`.
 
 > [!WARNING]\
-> **Sugestões de melhoria**:
+> **Recomendações**:
 >
 > * **Validação de Dados de Entrada**:
 >   * O código atual não valida se os dados que o usuário envia são realmente os esperados.
