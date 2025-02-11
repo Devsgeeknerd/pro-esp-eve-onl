@@ -66,6 +66,12 @@
 > [!NOTE]\
 > **Observações**:
 >
+> * O uso de `convertHourStringToMinutes` e `convertMinutesToHourString`**:
+>   * Essas funções são importantes para garantir que os horários sejam armazenados de forma consistente no banco de dados (como minutos).
+>   * No entanto, é crucial garantir que o formato de entrada seja validado corretamente antes de passá-lo para essas funções.
+>
+> * **Uso de `prisma.game.findMany` com `include`**:
+>   * O uso de `include` com a contagem de anúncios é uma boa estratégia para evitar múltiplas consultas ao banco de dados, mas é importante ficar atento ao desempenho se o número de jogos ou anúncios crescer muito.
 
 <!-- Informações -->
 ## &#8505; Informações
