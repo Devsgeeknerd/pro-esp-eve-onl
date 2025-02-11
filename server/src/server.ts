@@ -82,4 +82,32 @@ app.post("/games/:id/ads", async (request, response) => {
 app.get("/games/:id/ads", async (request, response) => {
   // Pega o ID do jogo a partir do URL.
   const gameId = request.params.id;
+
+  // Busca os anúncios do jogo no banco de dados.
+  const ads = await prisma.ad.findMany({
+    select: {
+      // ID do anúncio.
+      id: true,
+      // Nome do jogador.
+      name: true,
+      // Dias das semanas (armazenados como string).
+      weekDays: true,
+      // Se usa canal de voz.
+      useVoiceChannel: true,
+      // Anos jogando.
+      yearsPlaying: true,
+      // Hora de início (em minutos).
+      hourStart: true,
+      // Hora de fim (em minutos).
+      hourEnd: true,
+    },
+    where: {
+      // Filtra os anúncios pelo ID do jogo.
+      gameId,
+    },
+    orderBy: {
+      // Ordena os anúncios pela data de criação, do mais recente para o mais antigo.
+      createdAt: "desc",
+    },
+  });
 });
