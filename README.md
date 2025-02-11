@@ -31,6 +31,7 @@
 >   ```typescript
 >    const [hour, minutes] = hourString.split(":").map(part => parseInt(part, 10)); 
 >   ```
+>
 
 > [!WARNING]\
 > **Recomendações**:
@@ -74,6 +75,14 @@
 > * **Não Tratar Casos de Dados Não Encontrados**:
 >   * A função `findUniqueOrThrow` lançaria um erro se o anúncio não for encontrado, mas isso não é tratado no código.
 >   * Use um bloco `try/catch` para capturar exceções e retornar uma mensagem mais amigável caso o anúncio não seja encontrado.
+>
+> * **Melhorar a Legibilidade com Variáveis Intermediárias**:
+>   * A linha `const minutesAmount = hour * 60 + minutes;` poderia ser dividida em duas partes, para torná-la mais compreensível para iniciantes:
+>
+>   ```typescript
+>    const totalMinutesFromHours = hour * 60;
+>    const minutesAmount = totalMinutesFromHours + minutes;
+>   ```
 
 > [!NOTE]\
 > **Observações**:
