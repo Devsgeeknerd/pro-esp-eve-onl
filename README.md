@@ -15,6 +15,10 @@
 >   * O uso de `express.json()` e `cors()` como middleware é uma boa prática.
 >   * Isso permite que o servidor entenda e aceite requisições JSON e também que aplicações de diferentes origens possam se comunicar com a API.
 >   * Em sistema de produção, é bom adicionar um middleware para verificar autenticações e autorizações.
+>
+> * **Organização do Código**:
+>   * O código está organizado de forma simples, com cada rota responsável por uma tarefa específica.
+>   * Se o projeto crescer, separe o código em módulos, por exemplo, criando pastas para `controllers`, `services`, e `routes`.
 
 > [!WARNING]\
 > **Sugestões de melhoria**:
