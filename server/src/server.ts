@@ -77,3 +77,79 @@ app.post("/games/:id/ads", async (request, response) => {
   // Retorna a resposta com o anúncio criado, com status 201 (criado).
   return response.status(201).json(ad);
 });
+
+// Rota GET para listar todos os anúncios de um jogo específico.
+app.get("/games/:id/ads", async (request, response) => {
+  // Pega o ID do jogo a partir do URL.
+  const gameId = request.params.id;
+
+  // Busca os anúncios do jogo no banco de dados.
+  const ads = await prisma.ad.findMany({
+    select: {
+      // ID do anúncio.
+      id: true,
+      // Nome do jogador.
+      name: true,
+      // Dias das semanas (armazenados como string).
+      weekDays: true,
+      // Se usa canal de voz.
+      useVoiceChannel: true,
+      // Anos jogando.
+      yearsPlaying: true,
+      // Hora de início (em minutos).
+      hourStart: true,
+      // Hora de fim (em minutos).
+      hourEnd: true,
+    },
+    where: {
+      // Filtra os anúncios pelo ID do jogo.
+      gameId,
+    },
+    orderBy: {
+      // Ordena os anúncios pela data de criação, do mais recente para o mais antigo.
+      createdAt: "desc",
+    },
+  });
+
+  // Formata os anúncios retornados para um formato mais legível (transforma string de dias e horas).
+  return response.json(
+    ads.map((ad) => {
+      return {
+        // Mantém todas as propriedades do anúncio.
+        ...ad,
+        // Converte a string de dias de volta para um array.
+        weekDays: ad.weekDays.split(","),
+        // Converte os minutos de volta para o formato de hora.
+        hourStart: convertMinutesToHourString(ad.hourStart),
+        // Converte os minutos de volta para o formato de hora.
+        hourEnd: convertMinutesToHourString(ad.hourEnd),
+      };
+    })
+  );
+});
+
+// Rota GET para obter o Discord de um anúncio específico.
+app.get("/ads/:id/discord", async (request, response) => {
+  // Pega o ID do anúncio a partir da URL.
+  const adId = request.params.id;
+
+  // Busca o anúncio no banco de dados.
+  const id = await prisma.ad.findUniqueOrThrow({
+    select: {
+      // Só busca o campo discord.
+      discord: true,
+    },
+    where: {
+      // Filtra o anúncio pelo ID.
+      id: adId,
+    },
+  });
+
+  // Retorna o Discord do anúncio.
+  return response.json({
+    discord: ad.discord,
+  });
+});
+
+// Inicia o servidor na porta 3333.
+app.listen(3333);
