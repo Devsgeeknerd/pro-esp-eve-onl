@@ -58,6 +58,10 @@
 >      useVoiceChannel: boolean;
 >    }
 >    ```
+>
+> * **Não tratar casos de dados não encontrados**:
+>   * A função `findUniqueOrThrow` lançaria um erro se o anúncio não for encontrado, mas isso não é tratado no código.
+>   * Use um bloco `try/catch` para capturar exceções e retornar uma mensagem mais amigável caso o anúncio não seja encontrado.
 
 > [!NOTE]\
 > **Observações**:
