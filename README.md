@@ -11,6 +11,9 @@
 >   * **Descrição:**
 >     * É importante garantir que os dados recebidos pelo servidor estejam em um formato esperado e validado.
 >     * No código, o uso de `express.json()` já é uma boa prática para parsear as requisições JSON.
+>
+>   * **Sugestões:**
+>     * Defina tipos mais específicos no TypeScript para cada corpo de requisição, evitando o uso de `any`.
 
 > [!WARNING]\
 > **Sugestões de melhoria**:
