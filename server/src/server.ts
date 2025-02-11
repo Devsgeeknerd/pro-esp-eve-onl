@@ -79,4 +79,7 @@ app.post("/games/:id/ads", async (request, response) => {
 });
 
 // Rota GET para listar todos os anúncios de um jogo específico.
-app.get("/games/:id/ads", async (request, response) => {});
+app.get("/games/:id/ads", async (request, response) => {
+  // Pega o ID do jogo a partir do URL.
+  const gameId = request.params.id;
+});
