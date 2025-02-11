@@ -66,7 +66,7 @@
 > [!NOTE]\
 > **Observações**:
 >
-> * O uso de `convertHourStringToMinutes` e `convertMinutesToHourString`**:
+> * **O uso de `convertHourStringToMinutes` e `convertMinutesToHourString`**:
 >   * Essas funções são importantes para garantir que os horários sejam armazenados de forma consistente no banco de dados (como minutos).
 >   * No entanto, é crucial garantir que o formato de entrada seja validado corretamente antes de passá-lo para essas funções.
 >
