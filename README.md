@@ -23,6 +23,11 @@
 > [!WARNING]\
 > **Sugestões de melhoria**:
 >
+> * Validação de Dados de Entrada**:
+>   * O código atual não valida se os dados que o usuário envia são realmente os esperados.
+>   * Por exemplo, `body.weekDays` é tratado como um array de strings, mas não há uma verificação para garantir que esses estejam no formato correto.
+>   * Use uma biblioteca como `Joi` ou `Zod` para validar os dados antes de inseri-los no banco de dados.
+>   * Isso pode evitar erros de inserção e melhorar a segurança da aplicação.
 
 > [!NOTE]\
 > **Observações**:
