@@ -86,6 +86,15 @@
 >
 > * **Tratar Valores Negativos ou Inválidos**:
 >   * Verificar se `hour` ou `minutes` são valores negativos ou estão fora dos intervalos válidos (por exemplo, `hours` deve ser entre 0 e 23, e `minutes` deve ser entre 0 e 59).
+>
+> * **Nomes Descritivos**:
+>   * Use nomes de variáveis e funções que descrevam claramente o que eles fazem. Por exemplo, minutesAmount e hour são nomes claros e descritivos.
+>
+> * **Imutabilidade**:
+>   * As variáveis hour e minutes são declaradas com const, o que garante que elas não serão reatribuídas acidentalmente.
+>
+> * **Formatação Consistente**:
+>   * O uso de padStart garante que a string sempre terá o formato correto, mesmo que os valores sejam menores que 10.
 
 > [!NOTE]\
 > **Observações**:
