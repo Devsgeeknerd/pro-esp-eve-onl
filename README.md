@@ -95,7 +95,8 @@
 > * **Tratar Valores Negativos ou Inválidos**:
 >   * Verificar se `hour` ou `minutes` são valores negativos ou estão fora dos intervalos válidos (por exemplo, `hours` deve ser entre 0 e 23, e `minutes` deve ser entre 0 e 59).
 >
-
+> * **Internacionalização**:
+>   * Se o código for usado em diferentes localidades, considere usar bibliotecas de internacionalização para formatar horas e minutos de acordo com o padrão local.
 
 > [!NOTE]\
 > **Observações**:
