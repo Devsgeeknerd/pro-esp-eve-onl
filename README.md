@@ -111,6 +111,17 @@
 > * **O Uso de `split` e `join` Para Manipulação de Dias da Semana**:
 >   * A conversão dos dias da semana para string e vice-versa (com `join` e `split`) pode ser uma estratégia simples, mas deve ser documentada corretamente para que não haja confusão sobre o formato esperado.
 
+## Próximos Passos
+
+* **Testes Unitários**:
+  * Escreva testes unitários para garantir que a função funciona corretamento em diferentes cenários, como valores de minutos que resultam em horas completas, minutos restantes, e valores extremos.
+
+* **Documentação**:
+  * Adicione documentação à função usando JSDoc para explicar o propósito da função, os parâmetros e o valor de retorno.
+
+* **Refatoração Para Reutilização**:
+  * Se essa funcionalidade for usada em vários lugares, considere encapsulá-la em uma classe ou módulo separado para facilitar a reutilização e manutenção.
+
 <!-- Informações -->
 ## &#8505; Informações
 
