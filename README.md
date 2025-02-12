@@ -41,6 +41,8 @@
 > * **Formatação Consistente**:
 >   * O uso de `padStart` garante que a string sempre terá o formato correto, mesmo que os valores sejam menores que 10.
 
+---
+
 > [!WARNING]\
 > **Recomendações**:
 >
@@ -97,6 +99,8 @@
 > * **Internacionalização**:
 >   * Se o código for usado em diferentes localidades, considere usar bibliotecas de internacionalização para formatar horas e minutos de acordo com o padrão local.
 
+---
+
 > [!NOTE]\
 > **Observações**:
 >
@@ -119,6 +123,8 @@
 > * **Extensibilidade**:
 >   * O código atual é fácil de estender. Por exemplo, você pode facilmente adicionar suporte para segundos ou milissegundos, se necessário.
 
+---
+
 ## Próximos Passos
 
 * **Testes Unitários**:
@@ -129,6 +135,8 @@
 
 * **Refatoração Para Reutilização**:
   * Se essa funcionalidade for usada em vários lugares, considere encapsulá-la em uma classe ou módulo separado para facilitar a reutilização e manutenção.
+
+---
 
 <!-- Informações -->
 ## &#8505; Informações
