@@ -14,18 +14,18 @@
 > * **Uso de Middleware**:
 >   * O uso de `express.json()` e `cors()` como middleware é uma boa prática.
 >   * Isso permite que o servidor entenda e aceite requisições JSON e também que aplicações de diferentes origens possam se comunicar com a API.
->   * Em sistema de produção, é bom adicionar um middleware para verificar autenticações e autorizações.
+>   * Em sistemas de produção, é bom adicionar um middleware para verificar autenticações e autorizações.
 >
 > * **Organização do Código**:
 >   * O código está organizado de forma simples, com cada rota responsável por uma tarefa específica.
->   * Se o projeto crescer, separe o código em módulos, por exemplo, criando pastas para `controllers`, `services`, e `routes`.
+>   * Se o projeto crescer, separe o código em módulos, criando pastas para `controllers`, `services`, e `routes`.
 >
-> * **Nomes de Variáveis Claras e Descritivos**:
+> * **Nomes de Variáveis Claras e Descritivas**:
 >   * No caso, `hour` e `minutes` são nomes claros, mas poderíamos também usar `hours` e `minutes` no plural para uma consistência maior com a terminologia.
 >
 > * **Uso do `map(Number)`**:
->   * Embora `map(Number)` seja eficiente, pode ser um pouco confuso para que está começando.
->   * Uma alternativa mais explicita seria fazer o `parseInt` ou `parseFloat` diretamente.
+>   * Embora `map(Number)` seja eficiente, pode ser um pouco confuso para quem está começando.
+>   * Uma alternativa mais explícita seria usar `parseInt` ou `parseFloat` diretamente.
 >   * Exemplo:
 >
 >   ```typescript
@@ -33,13 +33,13 @@
 >   ```
 >
 > * **Nomes Descritivos**:
->   * Use nomes de variáveis e funções que descrevam claramente o que eles fazem. Por exemplo, minutesAmount e hour são nomes claros e descritivos.
+>   * Use nomes de variáveis e funções que descrevam claramente o que elas fazem. Por exemplo, `minutesAmount` e `hour` são nomes claros e descritivos.
 >
 > * **Imutabilidade**:
->   * As variáveis hour e minutes são declaradas com const, o que garante que elas não serão reatribuídas acidentalmente.
+>   * As variáveis `hour` e `minutes` são declaradas com `const`, o que garante que elas não serão reatribuídas acidentalmente.
 >
 > * **Formatação Consistente**:
->   * O uso de padStart garante que a string sempre terá o formato correto, mesmo que os valores sejam menores que 10.
+>   * O uso de `padStart` garante que a string sempre terá o formato correto, mesmo que os valores sejam menores que 10.
 
 > [!WARNING]\
 > **Recomendações**:
@@ -68,7 +68,6 @@
 >   * Exemplo:
 >
 >   ```typescript
->
 >    interface AdRequest {
 >      name: string;
 >      yearsPlaying: number;
@@ -78,7 +77,7 @@
 >      hourEnd: string;
 >      useVoiceChannel: boolean;
 >    }
->    ```
+>   ```
 >
 > * **Não Tratar Casos de Dados Não Encontrados**:
 >   * A função `findUniqueOrThrow` lançaria um erro se o anúncio não for encontrado, mas isso não é tratado no código.
@@ -93,7 +92,7 @@
 >   ```
 >
 > * **Tratar Valores Negativos ou Inválidos**:
->   * Verificar se `hour` ou `minutes` são valores negativos ou estão fora dos intervalos válidos (por exemplo, `hours` deve ser entre 0 e 23, e `minutes` deve ser entre 0 e 59).
+>   * Verifique se `hour` ou `minutes` são valores negativos ou estão fora dos intervalos válidos (por exemplo, `hours` deve ser entre 0 e 23, e `minutes` deve ser entre 0 e 59).
 >
 > * **Internacionalização**:
 >   * Se o código for usado em diferentes localidades, considere usar bibliotecas de internacionalização para formatar horas e minutos de acordo com o padrão local.
@@ -115,15 +114,15 @@
 >   * O código é simples e direto, o que é ótimo para iniciantes. No entanto, à medida que você avança, pode querer adicionar mais funcionalidades, como validação de entrada ou suporte para diferentes formatos de tempo.
 >
 > * **Legibilidade**:
->   * O uso de padStart e String pode ser novo para iniciantes, mas é uma prática comum em JavaScript/TypeScript para garantir que strings tenham um formato consistente.
+>   * O uso de `padStart` e `String` pode ser novo para iniciantes, mas é uma prática comum em JavaScript/TypeScript para garantir que strings tenham um formato consistente.
 >
 > * **Extensibilidade**:
->   * O código atual é fácil de estender. Por exemplo, você pode facilmente adicionar suporte para segundos ou milissegundos se necessário.
+>   * O código atual é fácil de estender. Por exemplo, você pode facilmente adicionar suporte para segundos ou milissegundos, se necessário.
 
 ## Próximos Passos
 
 * **Testes Unitários**:
-  * Escreva testes unitários para garantir que a função funciona corretamento em diferentes cenários, como valores de minutos que resultam em horas completas, minutos restantes, e valores extremos.
+  * Escreva testes unitários para garantir que a função funciona corretamente em diferentes cenários, como valores de minutos que resultam em horas completas, minutos restantes e valores extremos.
 
 * **Documentação**:
   * Adicione documentação à função usando JSDoc para explicar o propósito da função, os parâmetros e o valor de retorno.
