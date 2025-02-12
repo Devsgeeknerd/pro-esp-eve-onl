@@ -110,6 +110,15 @@
 >
 > * **O Uso de `split` e `join` Para Manipulação de Dias da Semana**:
 >   * A conversão dos dias da semana para string e vice-versa (com `join` e `split`) pode ser uma estratégia simples, mas deve ser documentada corretamente para que não haja confusão sobre o formato esperado.
+>
+> * **Simplicidade**:
+>   * O código é simples e direto, o que é ótimo para iniciantes. No entanto, à medida que você avança, pode querer adicionar mais funcionalidades, como validação de entrada ou suporte para diferentes formatos de tempo.
+>
+> * **Legibilidade**:
+>   * O uso de padStart e String pode ser novo para iniciantes, mas é uma prática comum em JavaScript/TypeScript para garantir que strings tenham um formato consistente.
+>
+> * **Extensibilidade**:
+>   * O código atual é fácil de estender. Por exemplo, você pode facilmente adicionar suporte para segundos ou milissegundos se necessário.
 
 ## Próximos Passos
 
