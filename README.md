@@ -44,7 +44,11 @@
 > * **Comentários Claros**:
 >   * Comente as partes essenciais do código para tornar o entendimento mais fácil.
 >   * Em projeto reais, comentar o código ajuda outros desenvolvedores a entenderem rapidamente a lógica por trás de cada parte.
-
+>
+> * **Organização**:
+>   * Mantenha sempre o código organizado.
+>   * A estrutura das tags deve ser bem definida, como vemos com as tags `<head>` e `<body>`, separando dados de metadados e conteúdo visual da pagina.
+>
 ---
 
 > [!WARNING]\
