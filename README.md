@@ -1,5 +1,5 @@
 <!-- Título -->
-# eSport
+# eSports
 
 ***Conteúdo do Projeto:***
 
@@ -40,7 +40,15 @@
 >
 > * **Formatação Consistente**:
 >   * O uso de `padStart` garante que a string sempre terá o formato correto, mesmo que os valores sejam menores que 10.
-
+>
+> * **Comentários Claros**:
+>   * Comente as partes essenciais do código para tornar o entendimento mais fácil.
+>   * Em projeto reais, comentar o código ajuda outros desenvolvedores a entenderem rapidamente a lógica por trás de cada parte.
+>
+> * **Organização**:
+>   * Mantenha sempre o código organizado.
+>   * A estrutura das tags deve ser bem definida, como vemos com as tags `<head>` e `<body>`, separando dados de metadados e conteúdo visual da pagina.
+>
 ---
 
 > [!WARNING]\
@@ -98,7 +106,10 @@
 >
 > * **Internacionalização**:
 >   * Se o código for usado em diferentes localidades, considere usar bibliotecas de internacionalização para formatar horas e minutos de acordo com o padrão local.
-
+>
+> * **SEO (Search Engine Optimization)**:
+>   * Pode-se adicionar mais metatags, como descrição da página (`<meta name="description" content="Descrição da página" />`), que ajudam no ranqueamento de buscadores.
+>
 ---
 
 > [!NOTE]\
