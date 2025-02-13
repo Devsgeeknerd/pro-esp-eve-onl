@@ -1,5 +1,5 @@
 <!-- Título -->
-# eSport
+# eSports
 
 ***Conteúdo do Projeto:***
 
