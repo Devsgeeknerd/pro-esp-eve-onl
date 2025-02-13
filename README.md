@@ -40,6 +40,10 @@
 >
 > * **Formatação Consistente**:
 >   * O uso de `padStart` garante que a string sempre terá o formato correto, mesmo que os valores sejam menores que 10.
+>
+> * **Comentários Claros**:
+>   * Comente as partes essenciais do código para tornar o entendimento mais fácil.
+>   * Em projeto reais, comentar o código ajuda outros desenvolvedores a entenderem rapidamente a lógica por trás de cada parte.
 
 ---
 
