@@ -106,7 +106,10 @@
 >
 > * **Internacionalização**:
 >   * Se o código for usado em diferentes localidades, considere usar bibliotecas de internacionalização para formatar horas e minutos de acordo com o padrão local.
-
+>
+> * **SEO (Search Engine Optimization)**:
+>   * Pode-se adicionar mais metatags, como descrição da página (`<meta name="description" content="Descrição da página" />`), que ajudam no ranqueamento de buscadores.
+>
 ---
 
 > [!NOTE]\
