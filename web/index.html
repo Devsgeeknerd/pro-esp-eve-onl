@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- Declaração do tipo de documento HTML, informando que estamos usando a versão HTML5. -->
+
+<html lang="en">
+    <!-- Início da tag HTML. O atributo "lang" define o idioma da página, neste caso, "en" significa inglês. -->
+
+    <head>
+        <!-- A tag <head> contém informações sobre o documento, como metadados, links de estilos e fontes. -->
+
+        <meta charset="UTF-8" />
+        <!-- Define a codificação de caracteres para UTF-8, permitindo o uso de caracteres especiais e acentuação. -->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <!-- Estabelece uma conexão antecipada com o site do Google Fonts para melhorar o carregamentos de fontes externas. -->
+
+        <link rel="preconnect" href="https://.fonts.gstatic.com" crossorigin />
+        <!-- Estabelece uma conexão antecipada com o servidor do Google Fonts para carregar as fontes de forma mais eficiente. -->
+
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <!-- Define o ícone que será exibido na aba do navegador (favicon), neste caso, um arquivo svg. -->
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Configura a exibição para dispositivos móveis, ajustando a largura da página conforme o tamanho da tela. -->
+        
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet" />
+        <!-- Importa a fonte "inter" do Google Fonts. São definidas variações de peso (400, 600, 700, 900) e a forma de carregamento da fonte. -->
+        
+        <title>eSports</title>
+        <!-- Define o título da página que será exibido na aba do navegador. -->
+         
+    </head>
+    <body class="bg-[#121214] bg-galaxy bg-cover bg-no-repeat">
+        <!-- Início do corpo da página. As classes aplicadas indicam o uso de fundo escuro e uma imagem de fundo chamada "galaxy". -->
+
+        <div id="root"></div>
+        <!-- O <div> com id "root" é onde a aplicação JavaScript (geralmente em frameworks como React) será renderizada. -->
+
+        <script type="module" src="/src/main.tsx"></script>
+        <!-- O <script> carrega o arquivo JavaScript/TypeScript que contém o código da aplicação. O tipo "module" indica que o script usa módulos ES6. -->
+
+    </body>
+
+</html>
