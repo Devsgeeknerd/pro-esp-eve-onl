@@ -110,6 +110,9 @@
 > * **SEO (Search Engine Optimization)**:
 >   * Pode-se adicionar mais metatags, como descrição da página (`<meta name="description" content="Descrição da página" />`), que ajudam no ranqueamento de buscadores.
 >
+> * **Acessibilidade**:
+>   * Incluir atributos como `alt` nas imagens e melhorar a navegação com teclas (exemplo: `tabindex`) são passos importantes para melhorar a experiência de usuários com deficiência.
+
 ---
 
 > [!NOTE]\
