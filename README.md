@@ -140,6 +140,10 @@
 >
 > * **Extensibilidade**:
 >   * O código atual é fácil de estender. Por exemplo, você pode facilmente adicionar suporte para segundos ou milissegundos, se necessário.
+>
+> * **Importação de fontes externas**:
+>   * Isso pode aumentar o tempo de carregamento da página.
+>   * Uma alternativa seria usar fontes locais ou otimizar o carregamento das fontes.
 
 ---
 
