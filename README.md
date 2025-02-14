@@ -164,6 +164,9 @@
 * **Explorar as Fontes**:
   * Como o código importa a fonte "Inter", você pode testar mudar a família de fontes para outras disponíveis no Google Fontes e verificar o impacto visual.
 
+* **Integrar com Frameworks**:
+  * Caso queira evoluir esse código para um projeto mais interativo, você pode aprender sobre aprender sobre frameworks como React, Vue ou Angular, que utilizam o id "root" para renderizar componentes na página.
+
 ---
 
 <!-- Informações -->
