@@ -144,6 +144,9 @@
 > * **Importação de fontes externas**:
 >   * Isso pode aumentar o tempo de carregamento da página.
 >   * Uma alternativa seria usar fontes locais ou otimizar o carregamento das fontes.
+> * **Uso de `type="module"`**:
+>   * Isso indica que o script está usando módulos ES6, então tenha em mente que o suporte a isso pode variar conforme o navegador, especialmente em versões mais antigas.
+>   * Para uma compatibilidade mais ampla, você pode precisar configurar um bundler como Webpack ou Vite para transpilar o código.
 
 ---
 
