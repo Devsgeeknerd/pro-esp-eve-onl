@@ -112,6 +112,10 @@
 >
 > * **Acessibilidade**:
 >   * Incluir atributos como `alt` nas imagens e melhorar a navegação com teclas (exemplo: `tabindex`) são passos importantes para melhorar a experiência de usuários com deficiência.
+>
+> * **Links Absolutos**:
+>   * O uso de links relativos como o caminho do favicon (`/vite.svg`) pode gerar problemas se o site for movido para outro domínio.
+>   * Prefira caminhos completos quando necessário.
 
 ---
 
