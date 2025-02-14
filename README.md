@@ -161,6 +161,9 @@
 * **Refatoração Para Reutilização**:
   * Se essa funcionalidade for usada em vários lugares, considere encapsulá-la em uma classe ou módulo separado para facilitar a reutilização e manutenção.
 
+* **Explorar as Fontes**:
+  * Como o código importa a fonte "Inter", você pode testar mudar a família de fontes para outras disponíveis no Google Fontes e verificar o impacto visual.
+
 ---
 
 <!-- Informações -->
