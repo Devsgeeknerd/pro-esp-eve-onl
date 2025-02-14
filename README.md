@@ -167,6 +167,10 @@
 * **Integrar com Frameworks**:
   * Caso queira evoluir esse código para um projeto mais interativo, você pode aprender sobre aprender sobre frameworks como React, Vue ou Angular, que utilizam o id "root" para renderizar componentes na página.
 
+* **Responsividade**:
+  * Teste a página em diferentes dispositivos para garantir que a exibição seja ideal.
+  * Utilize ferramentas como o Chrome DevTools para simular diferentes tamanhos de tela.
+
 ---
 
 <!-- Informações -->
