@@ -8,4 +8,7 @@ import { StatusBar } from "react-native";
 import {
   // Hook para carregar fontes personalizadas.
   useFonts,
+  // Fontes específicas que estão sendo carregadas.
+  Inter_400Regular,
+  Inter_600SemiBold
 } from "@expo-google-fonts/inter";
