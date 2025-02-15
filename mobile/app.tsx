@@ -103,6 +103,8 @@ function App() {
         barStyle="light-content"
         // Cor do fundo da barra de status (transparente).
         backgroundColor="transparent"
+        // Faz com que a barra de status seja translúcida.
+        translucent
       />
     </Background>
   );
