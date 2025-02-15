@@ -34,6 +34,10 @@ import "./src/service/notificationConfigs";
 // Função para pegar o token de notificações push.
 import { getPushNotificationToken } from "./src/service/getPushNoticationToken";
 
-function App() { }
+function App() {
+  // Definindo refs para armazenar as assinaturas das notificações.
+  // Para ouvir notificações recebidas.
+  const getNotificationListener = useRef<Subscription>();
+}
 
 export default App();
