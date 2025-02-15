@@ -41,6 +41,9 @@ function App() {
 
   // Para ouvir respostas de notificações (quando o usuário interage).
   const responseNotificationListener = useRef<Subscription>();
+
+  // Efeito para pegar o token de notificação quando o componente for montado.
+  useEffect(() => { });
 }
 
 export default App();
