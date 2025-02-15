@@ -10,5 +10,6 @@ import {
   useFonts,
   // Fontes específicas que estão sendo carregadas.
   Inter_400Regular,
-  Inter_600SemiBold
+  Inter_600SemiBold,
+  Inter_700Bold,
 } from "@expo-google-fonts/inter";
