@@ -38,6 +38,9 @@ function App() {
   // Definindo refs para armazenar as assinaturas das notificações.
   // Para ouvir notificações recebidas.
   const getNotificationListener = useRef<Subscription>();
+
+  // Para ouvir respostas de notificações (quando o usuário interage).
+  const responseNotificationListener = useRef<Subscription>();
 }
 
 export default App();
