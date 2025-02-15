@@ -98,7 +98,10 @@ function App() {
   return (
     // Componente de fundo.
     <Background>
-      <StatusBar />
+      <StatusBar
+        // Estilo da barra de status (cor texto).
+        barStyle="light-content"
+      />
     </Background>
   );
 }
