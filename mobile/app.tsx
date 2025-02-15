@@ -95,7 +95,10 @@ function App() {
   });
 
   // Renderiza o componente principal da aplicação.
-  return ();
+  return (
+    // Componente de fundo.
+    <Background></Background>
+  );
 }
 
 export default App();
