@@ -97,7 +97,9 @@ function App() {
   // Renderiza o componente principal da aplicação.
   return (
     // Componente de fundo.
-    <Background></Background>
+    <Background>
+      <StatusBar />
+    </Background>
   );
 }
 
