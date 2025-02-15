@@ -93,6 +93,9 @@ function App() {
     // Fonte black.
     Inter_900Black,
   });
+
+  // Renderiza o componente principal da aplicação.
+  return ();
 }
 
 export default App();
