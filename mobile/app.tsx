@@ -57,6 +57,12 @@ function App() {
       // Exibe a notificação no console.
       console.log(notification);
     });
+
+    // Adiciona um listener para quando o usuário interagir com a notificação.
+    responseNotificationListener.current = Notifications.addNotificationReceivedListener((response) => {
+      // Exibe a resposta no console.
+      console.log(response);
+    });
   });
 }
 
