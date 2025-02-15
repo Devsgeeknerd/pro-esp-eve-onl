@@ -43,7 +43,11 @@ function App() {
   const responseNotificationListener = useRef<Subscription>();
 
   // Efeito para pegar o token de notificação quando o componente for montado.
-  useEffect(() => { });
+  useEffect(() => {
+    // Chama a função que pega o token para enviar notificações.
+    getNotificationListener();
+    // A lista vazia significa que essa função será chamada apenas uma vez, quando o componente for montado.
+  }, []);
 }
 
 export default App();
