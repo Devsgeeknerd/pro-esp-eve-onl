@@ -63,6 +63,9 @@ function App() {
       // Exibe a resposta no console.
       console.log(response);
     });
+
+    // Função de limpeza para remover os listeners quando o componente for desmontado.
+    return () => { };
   });
 }
 
