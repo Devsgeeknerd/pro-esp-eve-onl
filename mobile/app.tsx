@@ -21,3 +21,6 @@ import { Subscription } from "expo-modules-core";
 
 // Para trabalhar com notificações push no Expo.
 import * as Notifications from "expo-notifications";
+
+// Importa a definição das rotas da aplicação.
+import { Routes } from "./src/routes";
