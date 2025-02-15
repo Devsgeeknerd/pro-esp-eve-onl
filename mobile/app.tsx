@@ -51,7 +51,13 @@ function App() {
   }, []);
 
   // Efeito para adicionar listeners para as nominações.
-  useEffect(() => { });
+  useEffect(() => {
+    // Adiciona um listener para quando um notificação for recebida.
+    getNotificationListener.current = Notifications.addNotificationReceivedListener((notification) => {
+      // Exibe a notificação no console.
+      console.log(notification);
+    });
+  });
 }
 
 export default App();
