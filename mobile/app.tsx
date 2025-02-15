@@ -15,3 +15,6 @@ import {
   Inter_700Bold,
   Inter_900Black,
 } from "@expo-google-fonts/inter";
+
+// Tipo para gerenciar a assinatura de notificações.
+import { Subscription } from "expo-modules-core";
