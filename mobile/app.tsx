@@ -32,7 +32,7 @@ import { Background } from "./src/components/Background";
 import "./src/service/notificationConfigs";
 
 // Função para pegar o token de notificações push.
-import { getPushNotificationToken } from "./src/service/getPushNoticationToken";
+import { getPushNotificationToken } from "./src/service/getPushNotificationToken";
 
 function App() {
   // Definindo refs para armazenar as assinaturas das notificações.
