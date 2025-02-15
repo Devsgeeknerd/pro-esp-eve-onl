@@ -33,3 +33,7 @@ import "./src/service/notificationConfigs";
 
 // Função para pegar o token de notificações push.
 import { getPushNotificationToken } from "./src/service/getPushNoticationToken";
+
+function App() { }
+
+export default App();
