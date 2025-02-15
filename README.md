@@ -110,6 +110,13 @@
 > * **SEO (Search Engine Optimization)**:
 >   * Pode-se adicionar mais metatags, como descrição da página (`<meta name="description" content="Descrição da página" />`), que ajudam no ranqueamento de buscadores.
 >
+> * **Acessibilidade**:
+>   * Incluir atributos como `alt` nas imagens e melhorar a navegação com teclas (exemplo: `tabindex`) são passos importantes para melhorar a experiência de usuários com deficiência.
+>
+> * **Links Absolutos**:
+>   * O uso de links relativos como o caminho do favicon (`/vite.svg`) pode gerar problemas se o site for movido para outro domínio.
+>   * Prefira caminhos completos quando necessário.
+
 ---
 
 > [!NOTE]\
@@ -133,6 +140,13 @@
 >
 > * **Extensibilidade**:
 >   * O código atual é fácil de estender. Por exemplo, você pode facilmente adicionar suporte para segundos ou milissegundos, se necessário.
+>
+> * **Importação de fontes externas**:
+>   * Isso pode aumentar o tempo de carregamento da página.
+>   * Uma alternativa seria usar fontes locais ou otimizar o carregamento das fontes.
+> * **Uso de `type="module"`**:
+>   * Isso indica que o script está usando módulos ES6, então tenha em mente que o suporte a isso pode variar conforme o navegador, especialmente em versões mais antigas.
+>   * Para uma compatibilidade mais ampla, você pode precisar configurar um bundler como Webpack ou Vite para transpilar o código.
 
 ---
 
@@ -146,6 +160,16 @@
 
 * **Refatoração Para Reutilização**:
   * Se essa funcionalidade for usada em vários lugares, considere encapsulá-la em uma classe ou módulo separado para facilitar a reutilização e manutenção.
+
+* **Explorar as Fontes**:
+  * Como o código importa a fonte "Inter", você pode testar mudar a família de fontes para outras disponíveis no Google Fontes e verificar o impacto visual.
+
+* **Integrar com Frameworks**:
+  * Caso queira evoluir esse código para um projeto mais interativo, você pode aprender sobre aprender sobre frameworks como React, Vue ou Angular, que utilizam o id "root" para renderizar componentes na página.
+
+* **Responsividade**:
+  * Teste a página em diferentes dispositivos para garantir que a exibição seja ideal.
+  * Utilize ferramentas como o Chrome DevTools para simular diferentes tamanhos de tela.
 
 ---
 
