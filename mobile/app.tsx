@@ -69,9 +69,18 @@ function App() {
       if (
         // Se o listener de notificação e o de notificação de resposta estiver presente.
         getNotificationListener.current && responseNotificationListener.current
-      ) { }
+      ) {
+        // Remove os listeners de notificações.
+        Notifications.removeNotificationSubscription(
+          getNotificationListener.current
+        );
+        Notifications.removeNotificationSubscription(
+          responseNotificationListener.current
+        );
+      }
     };
-  });
+    // Lista vazia para rodar esse efeito apenas uma vez, quando o componente for montado.
+  }, []);
 }
 
 export default App();
