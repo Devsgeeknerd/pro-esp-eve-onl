@@ -81,6 +81,18 @@ function App() {
     };
     // Lista vazia para rodar esse efeito apenas uma vez, quando o componente for montado.
   }, []);
+
+  // Carrega as fontes personalizadas.
+  const [fontsLoaded] = useFonts({
+    // Fonte normal.
+    Inter_400Regular,
+    // Fonte semibold.
+    Inter_600SemiBold,
+    // Fonte bold.
+    Inter_700Bold,
+    // Fonte black.
+    Inter_900Black,
+  });
 }
 
 export default App();
