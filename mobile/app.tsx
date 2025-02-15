@@ -3,4 +3,5 @@
 import { useEffect, useRef } from "react";
 
 // StatusBar para controlar a barra de status do dispositivo.
-import { StatusBar } from "@expo-google-fonts/inter";
+import { StatusBar } from "react-native";
+
