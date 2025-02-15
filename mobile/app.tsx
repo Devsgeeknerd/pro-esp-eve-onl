@@ -101,6 +101,8 @@ function App() {
       <StatusBar
         // Estilo da barra de status (cor texto).
         barStyle="light-content"
+        // Cor do fundo da barra de status (transparente).
+        backgroundColor="transparent"
       />
     </Background>
   );
