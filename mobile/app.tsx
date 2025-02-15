@@ -30,3 +30,6 @@ import { Background } from "./src/components/Background";
 
 // Configurações de notificação.
 import "./src/service/notificationConfigs";
+
+// Função para pegar o token de notificações push.
+import { getPushNotificationToken } from "./src/service/getPushNoticationToken";
