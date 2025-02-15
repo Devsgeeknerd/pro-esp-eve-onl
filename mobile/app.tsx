@@ -18,3 +18,6 @@ import {
 
 // Tipo para gerenciar a assinatura de notificações.
 import { Subscription } from "expo-modules-core";
+
+// Para trabalhar com notificações push no Expo.
+import * as Notifications from "expo-notifications";
