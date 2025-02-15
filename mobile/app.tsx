@@ -5,6 +5,7 @@ import { useEffect, useRef } from "react";
 // StatusBar para controlar a barra de status do dispositivo.
 import { StatusBar } from "react-native";
 
+// Biblioteca para usar fontes do Google Fonts no Expo.
 import {
   // Hook para carregar fontes personalizadas.
   useFonts,
