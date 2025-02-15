@@ -65,7 +65,12 @@ function App() {
     });
 
     // Função de limpeza para remover os listeners quando o componente for desmontado.
-    return () => { };
+    return () => {
+      if (
+        // Se o listener de notificação e o de notificação de resposta estiver presente.
+        getNotificationListener.current && responseNotificationListener.current
+      ) { }
+    };
   });
 }
 
