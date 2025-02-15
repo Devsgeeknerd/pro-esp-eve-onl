@@ -27,3 +27,6 @@ import { Routes } from "./src/routes";
 
 // Componente de fundo da aplicação.
 import { Background } from "./src/components/Background";
+
+// Configurações de notificação.
+import "./src/service/notificationConfigs";
