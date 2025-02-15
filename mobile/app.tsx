@@ -49,6 +49,9 @@ function App() {
 
     // A lista vazia significa que essa função será chamada apenas uma vez, quando o componente for montado.
   }, []);
+
+  // Efeito para adicionar listeners para as nominações.
+  useEffect(() => { });
 }
 
 export default App();
