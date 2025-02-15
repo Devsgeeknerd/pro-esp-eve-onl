@@ -24,3 +24,6 @@ import * as Notifications from "expo-notifications";
 
 // Importa a definição das rotas da aplicação.
 import { Routes } from "./src/routes";
+
+// Componente de fundo da aplicação.
+import { Background } from "./src/components/Background";
