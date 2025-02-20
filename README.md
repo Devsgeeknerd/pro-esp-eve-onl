@@ -51,6 +51,9 @@
 >
 > * **Uso de `useEffect` com listas vazias**:
 >   * Isso é uma prática comum para executar algo apenas uma vez quando o componente é montado, como no caso de pegar o token de notificações ou configurar listeners.
+>
+> * **Uso de `useRef`**:
+>   * É usado para armazenar valores que não precisam causar uma nova renderização quando modificados, como assinaturas de notificações.
 
 ---
 
