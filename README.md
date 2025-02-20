@@ -57,6 +57,9 @@
 >
 > * **Componentes Funcionais**:
 >   * Está seguindo a abordagem de componentes funcionais do React, o que é uma boa prática em versões recentes do React.
+>
+> * **Gerenciamento de Recursos (limpeza)**:
+>   * É importante remover os listeners dentro do `useEffect` na função de limpeza, para evitar vazamentos de memória e comportamentos inesperados.
 
 ---
 
