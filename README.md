@@ -131,6 +131,9 @@
 > * **Links Absolutos**:
 >   * O uso de links relativos como o caminho do favicon (`/vite.svg`) pode gerar problemas se o site for movido para outro domínio.
 >   * Prefira caminhos completos quando necessário.
+>
+> * **Tratamento de Erros**:
+>   * Adicionar um tratamento de erros ao chamar `getPushNotificationToken` pode ser útil para garantir que, se algo der errado ao pegar o token, isso seja registrado e tratado corretamente.
 
 ---
 
