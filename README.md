@@ -54,6 +54,9 @@
 >
 > * **Uso de `useRef`**:
 >   * É usado para armazenar valores que não precisam causar uma nova renderização quando modificados, como assinaturas de notificações.
+>
+> * **Componentes Funcionais**:
+>   * Está seguindo a abordagem de componentes funcionais do React, o que é uma boa prática em versões recentes do React.
 
 ---
 
