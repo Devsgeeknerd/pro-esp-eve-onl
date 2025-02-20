@@ -134,6 +134,9 @@
 >
 > * **Tratamento de Erros**:
 >   * Adicionar um tratamento de erros ao chamar `getPushNotificationToken` pode ser útil para garantir que, se algo der errado ao pegar o token, isso seja registrado e tratado corretamente.
+>
+> * **Centralizar Funções e Lógica**:
+>   * Se a lógica de notificação se tornar mais complexa no futuro, considere movê-la para um arquivo separado ou até mesmo um hook customizado, para manter o componente `App` mais simples e limpo.
 
 ---
 
