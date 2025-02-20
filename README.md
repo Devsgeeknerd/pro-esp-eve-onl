@@ -49,6 +49,9 @@
 >   * Mantenha sempre o código organizado.
 >   * A estrutura das tags deve ser bem definida, como vemos com as tags `<head>` e `<body>`, separando dados de metadados e conteúdo visual da pagina.
 >
+> * **Uso de `useEffect` com listas vazias**:
+>   * Isso é uma prática comum para executar algo apenas uma vez quando o componente é montado, como no caso de pegar o token de notificações ou configurar listeners.
+
 ---
 
 > [!WARNING]\
