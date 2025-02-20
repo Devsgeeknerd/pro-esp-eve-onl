@@ -60,6 +60,9 @@
 >
 > * **Gerenciamento de Recursos (limpeza)**:
 >   * É importante remover os listeners dentro do `useEffect` na função de limpeza, para evitar vazamentos de memória e comportamentos inesperados.
+>
+> * **Carregamento Assíncrono de Fontes**:
+>   * Usar o hook `useFonts` do Expo para carregar as fontes de forma assíncrona é uma abordagem eficiente para garantir que o app não quebre caso a fonte não tenha sido carregada.
 
 ---
 
