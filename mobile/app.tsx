@@ -106,6 +106,7 @@ function App() {
         // Faz com que a barra de status seja translúcida.
         translucent
       />
+      {fontsLoaded ? <Routes /> : <Loading />}
     </Background>
   );
 }
