@@ -199,6 +199,9 @@
 * **Testes**:
   * Escrever testes unitários para a lógica de notificações e carregamento de fontes pode ser uma boa prática para garantir que tudo funcione como esperado ao longo do tempo.
 
+* **ui/ux**:
+  * Depois que o básico estiver funcionando, você pode focar em melhorar a experiência do usuário, mostrando notificações de forma personalizada ou implementando outras interações com o usuário.
+
 ---
 
 <!-- Informações -->
