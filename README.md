@@ -131,6 +131,12 @@
 > * **Links Absolutos**:
 >   * O uso de links relativos como o caminho do favicon (`/vite.svg`) pode gerar problemas se o site for movido para outro domínio.
 >   * Prefira caminhos completos quando necessário.
+>
+> * **Tratamento de Erros**:
+>   * Adicionar um tratamento de erros ao chamar `getPushNotificationToken` pode ser útil para garantir que, se algo der errado ao pegar o token, isso seja registrado e tratado corretamente.
+>
+> * **Centralizar Funções e Lógica**:
+>   * Se a lógica de notificação se tornar mais complexa no futuro, considere movê-la para um arquivo separado ou até mesmo um hook customizado, para manter o componente `App` mais simples e limpo.
 
 ---
 
@@ -185,6 +191,16 @@
 * **Responsividade**:
   * Teste a página em diferentes dispositivos para garantir que a exibição seja ideal.
   * Utilize ferramentas como o Chrome DevTools para simular diferentes tamanhos de tela.
+
+* **Adicionar Lógica Para Gerenciamento de Notificações em Background**:
+  * O código atual apenas lida com notificações enquanto o app está em primeiro plano.
+  * Pode ser interessante implementar a lógica para notificações quando o app está em segundo plano ou fechado.
+
+* **Testes**:
+  * Escrever testes unitários para a lógica de notificações e carregamento de fontes pode ser uma boa prática para garantir que tudo funcione como esperado ao longo do tempo.
+
+* **ui/ux**:
+  * Depois que o básico estiver funcionando, você pode focar em melhorar a experiência do usuário, mostrando notificações de forma personalizada ou implementando outras interações com o usuário.
 
 ---
 
