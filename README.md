@@ -192,6 +192,10 @@
   * Teste a página em diferentes dispositivos para garantir que a exibição seja ideal.
   * Utilize ferramentas como o Chrome DevTools para simular diferentes tamanhos de tela.
 
+* **Adicionar Lógica Para Gerenciamento de Notificações em Background**:
+  * O código atual apenas lida com notificações enquanto o app está em primeiro plano.
+  * Pode ser interessante implementar a lógica para notificações quando o app está em segundo plano ou fechado.
+
 ---
 
 <!-- Informações -->
