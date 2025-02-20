@@ -196,6 +196,9 @@
   * O código atual apenas lida com notificações enquanto o app está em primeiro plano.
   * Pode ser interessante implementar a lógica para notificações quando o app está em segundo plano ou fechado.
 
+* **Testes**:
+  * Escrever testes unitários para a lógica de notificações e carregamento de fontes pode ser uma boa prática para garantir que tudo funcione como esperado ao longo do tempo.
+
 ---
 
 <!-- Informações -->
