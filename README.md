@@ -49,7 +49,7 @@
 >   * Mantenha sempre o código organizado.
 >   * A estrutura das tags deve ser bem definida, como vemos com as tags `<head>` e `<body>`, separando dados de metadados e conteúdo visual da pagina.
 >
-> * **Uso de `useEffect` com listas vazias**:
+> * **Uso de `useEffect` Com Listas Vazias**:
 >   * Isso é uma prática comum para executar algo apenas uma vez quando o componente é montado, como no caso de pegar o token de notificações ou configurar listeners.
 >
 > * **Uso de `useRef`**:
@@ -99,7 +99,7 @@
 >   * A função `findUniqueOrThrow` lançaria um erro se o anúncio não for encontrado, mas isso não é tratado no código.
 >   * Use um bloco `try/catch` para capturar exceções e retornar uma mensagem mais amigável caso o anúncio não seja encontrado.
 >
-> * **Melhorar a Legibilidade com Variáveis Intermediárias**:
+> * **Melhorar a Legibilidade Com Variáveis Intermediárias**:
 >   * A linha `const minutesAmount = hour * 60 + minutes;` poderia ser dividida em duas partes, para torná-la mais compreensível para iniciantes:
 >
 >   ```typescript
